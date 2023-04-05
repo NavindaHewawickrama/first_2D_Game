@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Characters/PlayerCat.tscn" type="PackedScene" id=1]
+[ext_resource path="res://levels/GameLevel.gd" type="Script" id=2]
+
+[node name="GameLevel" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="PlayerCat" parent="." instance=ExtResource( 1 )]
+position = Vector2( 58, 49 )
